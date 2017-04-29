@@ -9,7 +9,13 @@ module.exports = function(app) {
     });
 //Create a POST route with /api/friends/ to handle incoming survey results and compatibiity logic.
     app.post("/api/friends", function(req, res) {
-        
+        console.log(req.body);
+        console.log(friends[0]);
+        var estFriend = "";
+        var bestFriendScore = ;
+        for (friend=0;friend<friends.length;friend++) {
+            
+        }
     });
 
 

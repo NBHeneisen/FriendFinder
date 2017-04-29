@@ -10,6 +10,26 @@
           integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 </head>
 <body>
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+            <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+
+    </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -35,194 +55,144 @@
                     </div>
 
                     <div id="questions">
-                        <h4>Question 1</h4>
-                        <p>Do you like food?</p>
-                        <select data-placeholder class="chosen-select" id="q1" style="display:none;">
-                            <option value></option>
-                            <option value="1">1 Strongly Disagree</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5 Strongly Agree</option>
-                        </select>
-                        <div class="question">
+                        <div class="form-group">
                             <h4>Question 1</h4>
-                            <p>Do you like food?</p>
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-                                <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li>1 Strongly disagree</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                    <li>4</li>
-                                    <li>5 Strongly Agree</li>
-                                </ul>
-                            </div>
+                            <label for="sel1">Do you like food?</label>
+                            <select class="form-control" id="q1">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
                         </div>
-                        <div class="question">
+                        <div class="form-group">
                             <h4>Question 2</h4>
-                            <p>Are you happy?</p>
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-                                <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li>1 Strongly disagree</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                    <li>4</li>
-                                    <li>5 Strongly Agree</li>
-                                </ul>
-                            </div>
+                            <label for="q2">Are you happy?</label>
+                            <select class="form-control" id="q2">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
                         </div>
-                        <div class="question">
+                        <div class="form-group">
                             <h4>Question 3</h4>
-                            <p>Does the name "Jimmy" have any significant meaning to you?</p>
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-                                <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li>1 Strongly disagree</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                    <li>4</li>
-                                    <li>5 Strongly Agree</li>
-                                </ul>
-                            </div>
+                            <label for="q3">Does the name "Jimmy" have any significant meaning to you?</label>
+                            <select class="form-control" id="q3">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
                         </div>
-                        <div class="question">
+                        <div class="form-group">
                             <h4>Question 4</h4>
-                            <p>Do you enjoy staring at the wall for long periods of time?</p>
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-                                <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li>1 Strongly disagree</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                    <li>4</li>
-                                    <li>5 Strongly Agree</li>
-                                </ul>
-                            </div>
+                            <label for="q4">Do you enjoy staring at the wall for long periods of time?</label>
+                            <select class="form-control" id="q4">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
                         </div>
-                        <div class="question">
+                        <div class="form-group">
                             <h4>Question 5</h4>
-                            <p>Do you feel like others think you're from a distant solar system?</p>
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-                                <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li>1 Strongly disagree</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                    <li>4</li>
-                                    <li>5 Strongly Agree</li>
-                                </ul>
-                            </div>
+                            <label for="q5">Do you feel like others think you're from a distant solar system?</label>
+                            <select class="form-control" id="q5">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
                         </div>
-                        <div class="question">
+                        <div class="form-group">
                             <h4>Question 6</h4>
-                            <p>Do you consider yourself to be "nifty"?</p>
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-                                <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li>1 Strongly disagree</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                    <li>4</li>
-                                    <li>5 Strongly Agree</li>
-                                </ul>
-                            </div>
+                            <label for="q6">Do you consider yourself a "nifty" person?</label>
+                            <select class="form-control" id="q6">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
                         </div>
-                        <div class="question">
+                        <div class="form-group">
                             <h4>Question 7</h4>
-                            <p>Do you want to know how to count all the way to schfifty five??</p>
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-                                <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li>Schwam Strongly disagree</li>
-                                    <li>Doo</li>
-                                    <li>Two and heif</li>
-                                    <li>Scheven</li>
-                                    <li>Schfourteen-teen Strongly Agree</li>
-                                </ul>
-                            </div>
+                            <label for="q7">Do you want to know how to count all the way to schfifty five??</label>
+                            <select class="form-control" id="q7">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
                         </div>
-                        <div class="question">
+                        <div class="form-group">
                             <h4>Question 8</h4>
-                            <p>You're not crazy, are you?</p>
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-                                <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li>1 Strongly disagree</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                    <li>4</li>
-                                    <li>5 Strongly Agree</li>
-                                </ul>
-                            </div>
+                            <label for="q8">You're not crazy, are you?</label>
+                            <select class="form-control" id="q8">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
                         </div>
-                        <div class="question">
+                        <div class="form-group">
                             <h4>Question 9</h4>
-                            <p>Are you sure?</p>
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-                                <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li>1 Strongly disagree</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                    <li>4</li>
-                                    <li>5 Strongly Agree</li>
-                                </ul>
-                            </div>
+                            <label for="q9">Are you sure?</label>
+                            <select class="form-control" id="q9">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
                         </div>
-                        <div class="question">
+                        <div class="form-group">
                             <h4>Question 10</h4>
-                            <p>Ready to find your match???</p>
-                            <div class="btn-group" role="group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown
-                                <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li>1 Strongly disagree</li>
-                                    <li>2</li>
-                                    <li>3</li>
-                                    <li>4</li>
-                                    <li>5 Strongly Agree</li>
-                                </ul>
-                            </div>
+                            <label for="q10">Ready to find your match???</label>
+                            <select class="form-control" id="q10">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
                         </div>
                     </div>
+                    <button type="submit" class="btn btn-danger" data-toggle="modal" data-target="#myModal">Submit</button>
                 </form>
             </div>
         </div>
     </div>
+    <br>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
         integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(".btn-danger").on("click", function(event) {
+        event.preventDefault();
+
+        var newFriend = {
+            Name: $("#userName").val().trim(),
+            Image: $("#photolink").val().trim(),
+            Answers: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val()]
+        };
+        console.log(newFriend);
+        
+        $.post("api/friends", newFriend,
+          function(data) {
+              console.log("I'm getting here!")
+          })
+        
+    });
+</script>
 </body>
 </html>
