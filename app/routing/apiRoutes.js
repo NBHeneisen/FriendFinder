@@ -29,6 +29,10 @@ module.exports = function(app) {
         console.log(bestFriend);
         console.log(bestFriendImg);
         console.log(bestFriendScore);
+        bestFriendObject ={};
+        bestFriendObject.Name = bestFriend;
+        bestFriendObject.Image = bestFriendImg;
+        res.json(bestFriendObject);
     });
 
 
