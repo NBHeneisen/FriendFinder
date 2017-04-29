@@ -191,10 +191,11 @@
             alert("Please fill out all information before submitting!");
         } else {
 
+            var currentURL = window.location.origin;
 
-            $.post("api/friends", newFriend, function(data) {
-                    console.log(data);
-                })
+            $.post(currentURL + "api/friends", newFriend, function(data) {
+                console.log(data);
+            })
         }
     });
 </script>
